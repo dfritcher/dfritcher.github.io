@@ -28,11 +28,11 @@ if($_POST) {
 
 
    // Set Message
-   $message .= "Email from: " . $name . "<br />";
+	$message .= "Email from: " . $name . "<br />";
 	$message .= "Email address: " . $email . "<br />";
-   $message .= "Message: <br />";
-   $message .= $contact_message;
-   $message .= "<br /> ----- <br /> This email was sent from your site's contact form. <br />";
+	$message .= "Message: <br />";
+	$message .= $contact_message;
+	$message .= "<br /> ----- <br /> This email was sent from your site's contact form. <br />";
 
    // Set From: header
    $from =  $name . " <" . $email . ">";
@@ -51,7 +51,7 @@ if($_POST) {
 
 		if ($mail) { echo "OK"; }
       else { 
-		  echo "Something went wrong. Please try again.";
+		  //echo "Something went wrong. Please try again.";
 		  echo "SiteOwnersEmail:" . $siteOwnersEmail;
 		  echo "Mail" . $mail;
 	  }
